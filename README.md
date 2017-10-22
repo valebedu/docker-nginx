@@ -1,6 +1,6 @@
 # docker-nginx
 
-docker-nginx help you to build application running with nginx on ubuntu systems.
+docker-nginx help you to build applications running with nginx on ubuntu systems.
 
 ## Table of Contents
 

@@ -1,13 +1,13 @@
 # Docker on Nginx
 #
-# version 0.1.0
+# version 0.2.0
 
 FROM ubuntu:xenial
 
 LABEL name="docker-nginx" \
-    description="docker-nginx help you to build application running with nginx on ubuntu systems." \
-    version="0.1.0" \
-    maintainer="valent1.bercot@gmail.com"
+    description="docker-nginx help you to build applications running with nginx on ubuntu systems." \
+    version="0.2.0" \
+    maintainer="Valetin Bercot <valent1.bercot@gmail.com>"
 
 # Set Nginx platform
 ARG NGINX_PLATFORM=xenial
@@ -32,3 +32,6 @@ RUN wget http://nginx.org/keys/nginx_signing.key && \
 
 # Expose ports
 EXPOSE 80 443
+
+# Start Nginx
+CMD ["nginx", "-g", "daemon off;"]
