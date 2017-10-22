@@ -1,6 +1,9 @@
 FROM ubuntu:xenial
 
-MAINTAINER Valentin Bercot <valent1.bercot@gmail.com>
+LABEL name="docker-nginx" \
+    description="docker-nginx help you to build application running with nginx on ubuntu systems." \
+    version="0.1.0" \
+    maintainer="valent1.bercot@gmail.com"
 
 # Set Nginx platform
 ENV NGINX_PLATFORM  xenial
