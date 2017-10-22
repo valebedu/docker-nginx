@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning][semantic_versioning].
 
 ## Unreleased
 
+## 0.2.0 - 2017-10-22
+
+### Added
+
+*   CMD command in Dockerfile to start nginx
+
+### Changed
+
+*   Replace depreciated MAINTAINER command by LABEL
+*   Replace ENV command by ARG
+
 ## 0.1.0 - 2017-10-20
 
 ### Added

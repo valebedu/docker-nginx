@@ -1,9 +1,16 @@
+# Docker on Nginx
+#
+# version 0.2.0
+
 FROM ubuntu:xenial
 
-MAINTAINER Valentin Bercot <valent1.bercot@gmail.com>
+LABEL name="docker-nginx" \
+    description="docker-nginx help you to build applications running with nginx on ubuntu systems." \
+    version="0.2.0" \
+    maintainer="Valetin Bercot <valent1.bercot@gmail.com>"
 
 # Set Nginx platform
-ENV NGINX_PLATFORM  xenial
+ARG NGINX_PLATFORM=xenial
 
 # Install dependencies
 RUN apt-get update && \
@@ -25,3 +32,6 @@ RUN wget http://nginx.org/keys/nginx_signing.key && \
 
 # Expose ports
 EXPOSE 80 443
+
+# Start Nginx
+CMD ["nginx", "-g", "daemon off;"]

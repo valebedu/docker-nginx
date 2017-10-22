@@ -1,6 +1,6 @@
 # docker-nginx
 
-docker-nginx help you to build application running with nginx on ubuntu systems.
+docker-nginx help you to build applications running with nginx on ubuntu systems.
 
 ## Table of Contents
 
@@ -18,7 +18,7 @@ docker-nginx help you to build application running with nginx on ubuntu systems.
 Be sure Docker is installed on your machine before continuing. To ensure that docker is installed on your machine and running, run the following command.
 
 ``` shell
-docker -v
+docker --version
 ```
 
 The image will be downloaded automatically by running a script using it but if you want to download it manually, you can run the following command.
@@ -51,7 +51,7 @@ To run this docker image with a dockerfile you should first create a `Dockerfile
 ``` dockerfile
 FROM valentinbercot/docker-nginx
 
-COPY /path/to/ww /var/www
+COPY /path/to/www /var/www
 COPY /path/to/nginx.conf /etc/nginx/nginx.conf
 COPY /path/to/conf.d/default.conf /etc/nginx/conf.d/default.conf
 ```
@@ -96,7 +96,7 @@ docker-compose up
 
 ## Documentation
 
-More documentation about this repository is not needed. If you want to know more about Docker and Nginx please refer to official documentations in [reference](#reference).
+If you want to know more about Docker or Nginx please refer to official documentations in [reference](#reference).
 
 ## Reference
 
@@ -107,7 +107,7 @@ More documentation about this repository is not needed. If you want to know more
 
 You're free to contribute, please fork my project and send me a pull request.
 
-If you want to contribute please be aware of the [CODE OF CONDUCT][code_of_conduct].
+If you want to contribute please be aware of my [CODE OF CONDUCT][code_of_conduct].
 
 ## Licensing
 
