@@ -1,3 +1,7 @@
+# Docker on Nginx
+#
+# version 0.1.0
+
 FROM ubuntu:xenial
 
 LABEL name="docker-nginx" \
@@ -6,7 +10,7 @@ LABEL name="docker-nginx" \
     maintainer="valent1.bercot@gmail.com"
 
 # Set Nginx platform
-ENV NGINX_PLATFORM  xenial
+ARG NGINX_PLATFORM=xenial
 
 # Install dependencies
 RUN apt-get update && \
