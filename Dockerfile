@@ -1,13 +1,13 @@
 # Docker on Nginx
 #
-# version 0.2.0
+# version 0.2.1
 
 FROM ubuntu:xenial
 
 LABEL name="docker-nginx" \
     description="docker-nginx help you to build applications running with nginx on ubuntu systems." \
-    version="0.2.0" \
-    maintainer="Valetin Bercot <valent1.bercot@gmail.com>"
+    version="0.2.1" \
+    maintainer="Valentin Bercot <valent1.bercot@gmail.com>"
 
 # Set Nginx platform
 ARG NGINX_PLATFORM=xenial

@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning][semantic_versioning].
 
 ## Unreleased
 
+## 0.2.1 - 2017-11-01
+
+### Fixed
+
+*   Replace port flag by publish in Readme
+
 ## 0.2.0 - 2017-10-22
 
 ### Added
