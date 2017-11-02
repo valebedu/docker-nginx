@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning][semantic_versioning].
 
 ## Unreleased
 
+## 0.2.2 - 2017-11-02
+
+### Fixed
+
+*   Add mailto to email address in Code of Conduct
+
 ## 0.2.1 - 2017-11-01
 
 ### Fixed
