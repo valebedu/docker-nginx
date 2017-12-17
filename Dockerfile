@@ -1,7 +1,3 @@
-# Docker on Nginx
-#
-# version 0.2.2
-
 FROM ubuntu:xenial
 
 LABEL name="docker-nginx" \

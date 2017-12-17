@@ -40,8 +40,8 @@ docker run --name yourContainerName --detach valentinbercot/docker-nginx
 You can add the following options to this command to complete your configuration.
 
 *   set a port: `--publish 8080:80`
-*   set a content volume: `--volume path/to/www:/var/www`
-*   set a configuration volume: `--volume path/to/nginx.conf:/etc/nginx/nginx.conf`
+*   set a content volume: `--volume /path/to/www:/var/www`
+*   set a configuration volume: `--volume /path/to/nginx.conf:/etc/nginx/nginx.conf`
 
 #### Dockerfile
 
